@@ -1,15 +1,17 @@
+## 
+当你做一件事情非常费力的时候，那么做这件事情的方法可能不太对.
+
 ## python 
 python 版本之间的差异:
 
 ## 虚拟环境搭建
-env\Scripts\activate   激活
-env\Scripts\deactivate 退出
-py -m venv env  创建虚拟环境
+python -m venv env  创建虚拟环境
+source env/bin/activate   激活
+deactivate 退出
 
 ## pip 镜像加速,提升安装包的速度.
 腾讯云pip 镜像
 全局使用: pip config set global.index-url https://mirrors.cloud.tencent.com/pypi/simple
-
 
 全局使用: pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple/
 临时使用: pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
@@ -29,6 +31,31 @@ Flask 是一个轻量级的 Web 框架，适合快速开发小型应用。
 LLM 选择框架 langchain, 因为它提供了丰富的功能和组件，方便开发 LLM 应用。
 
 ## 项目目录结构约定、规范与依赖注入.
+ pip install injector
+
+```aiignore
+from injector import Injector,inject
+
+class A:
+    name: str = "llmops"
+
+@inject
+class B:
+    def __init__(self, a: A):
+        self.a = a
+
+    def print_name(self):
+        print(self.a.name)
+
+injector = Injector()
+b = injector.get(B)
+b.print_name()
+```
+
+## 总结
+![img.png](img.png)
+
+
 
 
 
