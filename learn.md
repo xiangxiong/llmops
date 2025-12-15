@@ -56,6 +56,24 @@ b.print_name()
 ![img.png](img.png)
 
 
+## 测试，运行环境配置
+     export PYTHONPATH=/Users/apple/Desktop/python/llm-ops/llmops:$PYTHONPATH
+     python /Users/apple/Desktop/python/llm-ops/llmops/app/http/app.py
+
+## 安装依赖
+pip freeze
+pip freeze > requirements.txt
+pipreqs 依赖生成
+https://pypi.org/project/pipreqs/
+pipreqs --ignore venv --force
+
+生成 requirements.txt 文件
+pipreqs --ignore venv --force
+
+根据依赖去安装
+pip install -r requirements.txt
+
+这个包如何使用 pipreqs
 
 
 
