@@ -75,6 +75,17 @@ pip install -r requirements.txt
 
 这个包如何使用 pipreqs
 
+# postgres 数据库
+docker run -d --name postgres -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=postgres postgres
+
+docker exec -it postgres bash
+
+psql -U postgres -d postgres
+
+
+##  使用 Postgres 作为数据库方案.
+* 添加Flask-SQLAlchemy 和 Flask-Migrate 扩展.
+* 创建数据库模型.
 
 
 
