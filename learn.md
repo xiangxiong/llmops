@@ -88,6 +88,15 @@ psql -U postgres -d postgres
 * 创建数据库模型.
 
 
+## Flask-wtf 的安装和使用
+支持csrf 保护
+支持规则验证
+数据类型验证
+快速提取数据
+https://flask-wtf.readthedocs.io/en/1.2.x/install/#
+https://wtforms.readthedocs.io/en/3.2.x/ 
+
+
 
 
 

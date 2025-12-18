@@ -1,3 +1,5 @@
+from crypt import methods
+
 from flask import Flask,Blueprint
 from internal.handler.app_handler import AppHandler
 from injector import inject
@@ -18,6 +20,7 @@ class Router:
 
         # 2、注册路由
         bp.add_url_rule('/ping',view_func=self.app_handler.ping)
+        bp.add_url_rule('/completion',methods=['POST'],view_func=self.app_handler.completion)
 
         # 在应用上注册蓝图
         app.register_blueprint(bp)
