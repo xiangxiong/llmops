@@ -1,8 +1,8 @@
 from injector import Injector
-from llmops.internal.server import Http
-from llmops.internal.router import Router
+from internal.server import Http
+from internal.router import Router
 import dotenv;
-from llmops.config import Config;
+from config import Config;
 
 # 将 env 加载到环境变量当中.
 dotenv.load_dotenv()

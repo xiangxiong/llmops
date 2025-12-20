@@ -60,6 +60,8 @@ b.print_name()
      export PYTHONPATH=/Users/apple/Desktop/python/llm-ops/llmops:$PYTHONPATH
      python /Users/apple/Desktop/python/llm-ops/llmops/app/http/app.py
 
+   export PYTHONPATH="${PYTHONPATH}:/Users/apple/Desktop/python/llm-ops"
+   
 ## 安装依赖
 pip freeze
 pip freeze > requirements.txt
