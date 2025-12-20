@@ -1,6 +1,6 @@
 from flask import Flask;
-from internal.router import Router;
-from config import Config;
+from llmops.internal.router import Router;
+from llmops.config import Config;
 
 class Http(Flask):
 

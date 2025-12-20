@@ -1,7 +1,7 @@
 from crypt import methods
 
 from flask import Flask,Blueprint
-from internal.handler.app_handler import AppHandler
+from llmops.internal.handler.app_handler import AppHandler
 from injector import inject
 from dataclasses import dataclass
 

@@ -1,7 +1,7 @@
 import os
 from flask import  request;
 from openai import OpenAI;
-from internal.schema.app_schema import CompletionReq;
+from llmops.internal.schema.app_schema import CompletionReq;
 
 class AppHandler:
 
