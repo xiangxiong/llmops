@@ -25,10 +25,10 @@ class Http(Flask):
 
         # 初始化扩展
         db.init_app(self)
+        migrate.init_app(self, db, directory="internal/migrate")
         with self.app_context():
             _ = App()
             db.create_all()
-        # migrate.init_app(self, db)
 
 
     def handle_error(self, error: Exception):

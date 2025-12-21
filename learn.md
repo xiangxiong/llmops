@@ -135,6 +135,7 @@ python -m app.http.app  运行
 ## 重写SQLAlchemy核心类实现自动提交
 
 ## Flask-Migrate扩展介绍与使用
+ flask --app app.http.app db migrate -m "create_table"
 
 -----  2025年12月21日  --- 
 

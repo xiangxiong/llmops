@@ -1,5 +1,5 @@
 from injector import Injector, Binder
-from app.http.module import ExtensionModule
+from llmops.app.http.module import ExtensionModule
 from internal.server.http import Http
 from internal.extension.database_extenstion import db
 from internal.router import Router
@@ -15,7 +15,9 @@ config = Config()
 
 injector = Injector([ExtensionModule])
 
-app = Http(__name__,conf=config, db=injector.get(SQLAlchemy), migrate=injector.get(Migrate), router=injector.get(Router))
+app = Http(__name__,conf=config,
+           db=injector.get(SQLAlchemy),
+           migrate=injector.get(Migrate), router=injector.get(Router))
 
 if __name__ == "__main__":
     app.run(debug=True)
