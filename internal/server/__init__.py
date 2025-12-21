@@ -1,4 +1,4 @@
-from llmops.internal.server.http import Http
+from .http import Http
 
 __all__ = [
     "Http"

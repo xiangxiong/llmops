@@ -112,12 +112,31 @@ https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
 https://flask-migrate.readthedocs.io/en/latest/
 
 ## Flask-SQLAlchemy扩展的配置与使用
+[已经学完]
 
 ## 应用ORM模型的创建与增删改查
+[已经学完]
+
+## 创建一个Flask应用，并使用Flask-SQLAlchemy扩展进行数据库操作.
+service 层
+主要来处理业务逻辑
+
+handle controller 层
+主要来是做控制器的处理
+
+model 模型层
+主要来做表结构生成
+
+router 路由层
+主要来做路由处理
+
+python -m app.http.app  运行
 
 ## 重写SQLAlchemy核心类实现自动提交
 
 ## Flask-Migrate扩展介绍与使用
+
+-----  2025年12月21日  --- 
 
 ## 为什么选择LangChain及LangChain简介
 
