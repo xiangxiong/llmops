@@ -99,6 +99,46 @@ https://flask-wtf.readthedocs.io/en/1.2.x/install/#
 https://wtforms.readthedocs.io/en/3.2.x/ 
 
 
+![img_1.png](img_1.png)
+
+## 自定义异常:
+
+## PyTest 配置与 API 测试用例case
+
+## SQLAIchemy 的配置和使用.
+https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
+
+## Flask-Migrate 的安装和使用.
+https://flask-migrate.readthedocs.io/en/latest/
+
+## Flask-SQLAlchemy扩展的配置与使用
+
+## 应用ORM模型的创建与增删改查
+
+## 重写SQLAlchemy核心类实现自动提交
+
+## Flask-Migrate扩展介绍与使用
+
+## 为什么选择LangChain及LangChain简介
+
+## LangChain框架安装及文档介绍
+
+## Prompt组件及使用技巧
+
+## Model组件及使用技巧
+
+## OutputParser组件及使用技巧
+
+## LCEL表达式与Runnable可运行协议
+
+## 两个Runnable核心类的讲解与使用
+
+## 利用回调功能调试链应用-让过程更透明.
+
+## API接口文档介绍与接口统一.
+
+使用AI 帮我推测未来的结果，让后我将根据未来的结果，利用未来的认知改变现在的自己.
+
 
 
 

@@ -1,7 +1,8 @@
 import os
 from flask import  request;
 from openai import OpenAI;
-from llmops.internal.schema.app_schema import CompletionReq;
+from internal.schema.app_schema import CompletionReq;
+from internal.exception import FailException
 
 class AppHandler:
 
@@ -31,8 +32,8 @@ class AppHandler:
         );
 
         content = completion.choices[0].message.content;
-
         return {"content": content};
 
     def ping(self):
-        return {"ping":"pong"}
+        raise FailException("测试2222异常")
+        # return {"ping":"pong"}
